@@ -1,7 +1,8 @@
-import "./App.css";
+import "./App.scss";
+import Routing from "./Routes/Routes";
 
 function App() {
-  return <h1>TurboCars</h1>;
+  return <div className="main-container">{<Routing />}</div>;
 }
 
 export default App;
