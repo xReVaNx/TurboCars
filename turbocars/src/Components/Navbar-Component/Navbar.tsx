@@ -1,16 +1,16 @@
+import style from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 
-import "./Navbar.scss";
 import logo from "../../svg/turbocarswhite.svg";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbar-logo">
-        <img src={logo} />
+    <div className={style.navbar}>
+      <div className={style.logo}>
+        <img src={logo} className={style.image} />
       </div>
-      <div className="navbar-menu">
-        <div className="navbar-list">
+      <div className={style.menu}>
+        <div className={style.list}>
           <Link to="/">Strona Główna</Link>
           <Link to="/price">Cennik</Link>
           <Link to="/about_us">O nas</Link>

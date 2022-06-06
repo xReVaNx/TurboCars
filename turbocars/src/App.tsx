@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./scss/bootstrap.scss";
 import Routing from "./Routes/Routes";
 
 function App() {

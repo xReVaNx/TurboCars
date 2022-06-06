@@ -5,9 +5,10 @@
   z-index: 1;
   width: 100vw;
   height: 140px;
+  display: none;
 }
 
-.navbar-logo {
+.logo {
   float: left;
   width: 60vw;
   height: 100px;
@@ -16,18 +17,18 @@
   background-size: contain;
 }
 
-.navbar-logo img {
+.image {
   height: 120px;
   width: auto;
 }
 
-.navbar-menu {
+.nmenu {
   float: left;
   width: 40vw;
   height: 100px;
 }
 
-.navbar-list {
+.list {
   color: white;
   display: flex;
   flex-direction: row;
@@ -37,7 +38,13 @@
   margin-top: 20px;
 }
 
-.navbar-list a {
+.list a {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 1400px) {
+  .navbar {
+    display: block;
+  }
 }

@@ -1,6 +1,7 @@
 import VideoHeader from "../Components/video-header-Component/VideoHeader";
 import Navbar from "../Components/Navbar-Component/Navbar";
-import Info from "../Components/Info-Component/Info";
+import Description from "../Components/Description-Component/Description";
+import Footer from "../Components/Footer-Component/Footer";
 
 const HomePage = () => {
   return (
@@ -8,7 +9,8 @@ const HomePage = () => {
       <VideoHeader>
         <Navbar />
       </VideoHeader>
-      <Info />
+      <Description />
+      <Footer />
     </>
   );
 };

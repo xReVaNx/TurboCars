@@ -1,10 +1,10 @@
-import "./VideoHeader.scss";
+import style from "./VideoHeader.module.scss";
 import bgVideo from "../../Videos/bgVideo_Trim.mp4";
 
 const VideoHeader = (props: any) => {
   return (
-    <div className="videoheader-container">
-      <video className="videoheader-video" autoPlay muted loop>
+    <div className={style.container}>
+      <video className={style.video} autoPlay muted loop>
         <source src={bgVideo} type="video/mp4" />
       </video>
       {props.children}

@@ -1,12 +1,12 @@
-.videoheader-container {
+.container {
   margin: 0;
   padding: 0;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   background-color: black;
 }
 
-.videoheader-video {
+.video {
   opacity: 0.6;
 }

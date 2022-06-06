@@ -1,0 +1,115 @@
+@import "../../scss/colors";
+
+@mixin stripes {
+  width: 10.6%;
+  height: 1.8%;
+  background-color: $primary-color;
+  position: absolute;
+  z-index: -1;
+}
+
+@mixin stripesTop {
+  top: 106vh;
+  transform: rotate(-60deg) skew(30deg);
+}
+
+@mixin stripesBot {
+  top: 206vh;
+  transform: rotate(60deg) skew(30deg);
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  height: 180px;
+  width: 320px;
+  background-image: url("../../images/sportscars.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // border-radius: 80px 30px 80px 30px;
+}
+
+.description {
+  width: 75vw;
+  margin: 50px;
+  height: auto;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+$j: -15vw;
+@for $i from 0 through 9 {
+  .stripeTop:nth-child(#{$i}) {
+    @include stripes;
+    @include stripesTop;
+    left: $j;
+  }
+  $j: $j + 5vw;
+}
+
+@media (min-width: 576px) {
+  .image {
+    height: 240px;
+    width: 426px;
+    // border-radius: 100px 30px 100px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .image {
+    height: 360px;
+    width: 640px;
+  }
+}
+
+@media (min-width: 992px) {
+  .image {
+    height: 360px;
+    width: 640px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .description {
+    width: 20vw;
+    height: auto;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .image {
+    height: 480px;
+    width: 854px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .description {
+    min-width: 20vw;
+    height: auto;
+    font-size: 22px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .image {
+    height: 540px;
+    width: 960px;
+  }
+}

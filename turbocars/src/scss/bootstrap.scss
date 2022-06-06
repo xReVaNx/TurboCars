@@ -1,0 +1,7 @@
+@import "./colors";
+
+$theme-colors: (
+  "primary": $primary-color,
+);
+
+@import "~bootstrap/scss/bootstrap";

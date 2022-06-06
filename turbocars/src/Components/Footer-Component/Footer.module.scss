@@ -1,0 +1,113 @@
+@import "../../scss/colors";
+
+@mixin footerSection {
+  width: 80vw;
+  border-top: 1px solid $primary-color;
+  margin-top: 15px;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  background-color: rgb(22, 22, 22);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  @include footerSection();
+  height: 10vh;
+  background: url(../../svg/turbocarswhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: none;
+}
+
+.menu {
+  @include footerSection();
+}
+
+.contact {
+  @include footerSection();
+}
+
+.poliecies {
+  @include footerSection();
+}
+
+.social {
+  @include footerSection();
+}
+
+.newsletter {
+  @include footerSection();
+}
+
+.container h1 {
+  font-size: 24px;
+  margin: 2px;
+  padding: 0;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.container .form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0 20px 0;
+}
+
+.form input {
+  text-align: center;
+  outline: none;
+  width: 50vw;
+  height: 40px;
+  font-size: 18px;
+}
+
+.form button {
+  width: 40vw;
+  height: 40px;
+  font-size: 18px;
+}
+
+.devSign {
+  width: 100vw;
+  padding-bottom: 20px;
+  color: $primary-color;
+  text-align: center;
+  background-color: rgb(22, 22, 22);
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 3;
+    min-height: auto;
+    column-gap: 100px;
+    row-gap: 40px;
+  }
+
+  .container div {
+    width: 25vw;
+  }
+
+  .devSign h1 {
+    font-size: 18px;
+  }
+}
