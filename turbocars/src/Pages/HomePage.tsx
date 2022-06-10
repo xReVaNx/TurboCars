@@ -1,14 +1,11 @@
-import VideoHeader from "../Components/video-header-Component/VideoHeader";
-import Navbar from "../Components/Navbar-Component/Navbar";
-import Description from "../Components/Description-Component/Description";
-import Footer from "../Components/Footer-Component/Footer";
+import VideoHeader from "../Components/video-header/VideoHeader";
+import Description from "../Components/Description/Description";
+import Footer from "../Components/Footer/Footer";
 
 const HomePage = () => {
   return (
     <>
-      <VideoHeader>
-        <Navbar />
-      </VideoHeader>
+      <VideoHeader />
       <Description />
       <Footer />
     </>

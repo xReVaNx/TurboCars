@@ -1,0 +1,82 @@
+@import "../../scss/colors";
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100px;
+}
+
+.logo {
+  float: left;
+  width: 80vw;
+  height: 100px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image {
+  height: 100px;
+  width: auto;
+}
+
+.menu {
+  float: left;
+  width: 20vw;
+  height: 100px;
+  padding-right: 20px;
+}
+
+.mobileMenu {
+  display: flex;
+}
+
+.list {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  margin-top: 20px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 40vw;
+  }
+
+  .image {
+    height: 140px;
+  }
+
+  .menu {
+    width: 60vw;
+  }
+
+  .list a {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+    width: 60vw;
+  }
+
+  .menu {
+    width: 40vw;
+  }
+}

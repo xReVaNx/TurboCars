@@ -10,13 +10,26 @@
   width: 100vw;
   min-height: 100vh;
   color: white;
-  background-color: rgb(22, 22, 22);
+  background-color: $secondary-color;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  h1 {
+    font-size: 24px;
+    margin: 2px;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
 }
 
 .logo {
@@ -26,68 +39,67 @@
   background-repeat: no-repeat;
   background-position: center;
   border-top: none;
+  align-self: center;
+  order: 1;
 }
 
 .menu {
   @include footerSection();
+  order: 4;
 }
 
 .contact {
   @include footerSection();
+  order: 5;
 }
 
 .poliecies {
   @include footerSection();
+  order: 6;
 }
 
 .social {
   @include footerSection();
+  order: 2;
 }
 
 .newsletter {
   @include footerSection();
+  order: 3;
 }
 
-.container h1 {
-  font-size: 24px;
-  margin: 2px;
-  padding: 0;
-}
-
-.container ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-}
-
-.container .form {
+.form {
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin: 20px 0 20px 0;
-}
 
-.form input {
-  text-align: center;
-  outline: none;
-  width: 50vw;
-  height: 40px;
-  font-size: 18px;
-}
+  input {
+    text-align: center;
+    outline: none;
+    width: 50vw;
+    height: auto;
+    font-size: 18px;
+  }
 
-.form button {
-  width: 40vw;
-  height: 40px;
-  font-size: 18px;
+  button {
+    width: 40vw;
+    height: auto;
+    font-size: 18px;
+  }
 }
 
 .devSign {
   width: 100vw;
+  padding-top: 20px;
   padding-bottom: 20px;
   color: $primary-color;
   text-align: center;
-  background-color: rgb(22, 22, 22);
+  background-color: $secondary-color;
+
+  h1 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -101,13 +113,9 @@
     min-height: auto;
     column-gap: 100px;
     row-gap: 40px;
-  }
 
-  .container div {
-    width: 25vw;
-  }
-
-  .devSign h1 {
-    font-size: 18px;
+    div {
+      width: 25vw;
+    }
   }
 }

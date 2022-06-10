@@ -1,0 +1,33 @@
+@import "../../scss/colors";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $secondary-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 80vw;
+    font-size: 40px;
+    border-bottom: 1px solid white;
+  }
+
+  a:last-child {
+    border: none;
+  }
+  :hover {
+    color: $primary-color;
+  }
+}

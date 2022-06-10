@@ -1,5 +1,5 @@
 import style from "./Footer.module.scss";
-import { Button, Form, FormControl } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 const Footer = () => {
   return (
@@ -61,8 +61,8 @@ const Footer = () => {
               naszej flocie? Zarejestruj się do newslettera już teraz.
             </li>
             <Form className={style.form}>
-              <Form.Control type="text" placeholder="Wpisz swój email" />
-              <Button variant="primary">Zapisz się</Button>
+              <Form.Control type="email" placeholder="Wpisz swój email" />
+              <Button variant="outline-primary">Zapisz się</Button>
             </Form>
           </ul>
         </div>

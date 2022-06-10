@@ -1,23 +1,5 @@
 @import "../../scss/colors";
 
-@mixin stripes {
-  width: 10.6%;
-  height: 1.8%;
-  background-color: $primary-color;
-  position: absolute;
-  z-index: -1;
-}
-
-@mixin stripesTop {
-  top: 106vh;
-  transform: rotate(-60deg) skew(30deg);
-}
-
-@mixin stripesBot {
-  top: 206vh;
-  transform: rotate(60deg) skew(30deg);
-}
-
 .container {
   margin: 0;
   padding: 0;
@@ -48,14 +30,10 @@
   text-align: center;
 }
 
-$j: -15vw;
-@for $i from 0 through 9 {
-  .stripeTop:nth-child(#{$i}) {
-    @include stripes;
-    @include stripesTop;
-    left: $j;
+@media (max-width: 575px) {
+  .image {
+    width: 95vw;
   }
-  $j: $j + 5vw;
 }
 
 @media (min-width: 576px) {
